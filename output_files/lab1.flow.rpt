@@ -1,0 +1,269 @@
+Flow report for lab1
+Thu Jan  8 16:30:53 2015
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Jan  8 16:30:52 2015       ;
+; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                   ; lab1                                        ;
+; Top-level Entity Name           ; lab1                                        ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Preliminary                                 ;
+; Logic utilization (in ALMs)     ; 96 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 197                                         ;
+; Total pins                      ; 139 / 457 ( 30 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 16 / 4,065,280 ( < 1 % )                    ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI TX Channels          ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 1 / 4 ( 25 % )                              ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 01/08/2015 16:25:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; lab1                ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                            ;
++---------------------------------------+------------------------------------------------------------------------+---------------+-------------------------------------------+----------------+
+; Assignment Name                       ; Value                                                                  ; Default Value ; Entity Name                               ; Section Id     ;
++---------------------------------------+------------------------------------------------------------------------+---------------+-------------------------------------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 203178706229062.142076313122105                                        ; --            ; --                                        ; --             ;
+; ECO_REGENERATE_REPORT                 ; On                                                                     ; Off           ; --                                        ; --             ;
+; EDA_OUTPUT_DATA_FORMAT                ; Vhdl                                                                   ; --            ; --                                        ; eda_simulation ;
+; EDA_SIMULATION_TOOL                   ; ModelSim-Altera (VHDL)                                                 ; <None>        ; --                                        ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/system.pre.h                   ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_ISW_FILE                          ; mysystem/synthesis/submodules/hps.pre.xml                              ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; HPS_PARTITION                         ; On                                                                     ; --            ; mysystem_Arm_A9_HPS_hps_io_border         ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_avalon_sc_fifo                     ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_merlin_axi_master_ni               ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_merlin_burst_adapter               ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_merlin_slave_agent                 ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_merlin_slave_translator            ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_merlin_traffic_limiter             ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_merlin_width_adapter               ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; altera_reset_controller                   ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem                                  ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_Arm_A9_HPS                       ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_Arm_A9_HPS_hps_io                ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_HEX3_HEX0                        ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_HEX5_HEX4                        ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_irq_mapper                       ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_irq_mapper_001                   ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_led                              ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0                ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0_addr_router    ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0_cmd_xbar_demux ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0_cmd_xbar_mux   ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0_id_router      ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0_rsp_xbar_demux ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_0_rsp_xbar_mux   ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1                ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1_addr_router    ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1_cmd_xbar_demux ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1_cmd_xbar_mux   ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1_id_router      ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1_rsp_xbar_demux ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_mm_interconnect_1_rsp_xbar_mux   ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_pushbuttons                      ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_ram                              ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_switches                         ; --             ;
+; IP_TOOL_ENV                           ; Qsys                                                                   ; --            ; mysystem_system_console                   ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_sc_fifo                                                  ; --            ; altera_avalon_sc_fifo                     ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_axi_master_ni                                            ; --            ; altera_merlin_axi_master_ni               ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_burst_adapter                                            ; --            ; altera_merlin_burst_adapter               ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_slave_agent                                              ; --            ; altera_merlin_slave_agent                 ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_slave_translator                                         ; --            ; altera_merlin_slave_translator            ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_traffic_limiter                                          ; --            ; altera_merlin_traffic_limiter             ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_width_adapter                                            ; --            ; altera_merlin_width_adapter               ; --             ;
+; IP_TOOL_NAME                          ; altera_reset_controller                                                ; --            ; altera_reset_controller                   ; --             ;
+; IP_TOOL_NAME                          ; Qsys                                                                   ; --            ; mysystem                                  ; --             ;
+; IP_TOOL_NAME                          ; altera_hps                                                             ; --            ; mysystem_Arm_A9_HPS                       ; --             ;
+; IP_TOOL_NAME                          ; altera_hps_io                                                          ; --            ; mysystem_Arm_A9_HPS_hps_io                ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_pio                                                      ; --            ; mysystem_HEX3_HEX0                        ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_pio                                                      ; --            ; mysystem_HEX5_HEX4                        ; --             ;
+; IP_TOOL_NAME                          ; altera_irq_mapper                                                      ; --            ; mysystem_irq_mapper                       ; --             ;
+; IP_TOOL_NAME                          ; altera_irq_mapper                                                      ; --            ; mysystem_irq_mapper_001                   ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_pio                                                      ; --            ; mysystem_led                              ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_interconnect_wrapper                                     ; --            ; mysystem_mm_interconnect_0                ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_router                                                   ; --            ; mysystem_mm_interconnect_0_addr_router    ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_demultiplexer                                            ; --            ; mysystem_mm_interconnect_0_cmd_xbar_demux ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_multiplexer                                              ; --            ; mysystem_mm_interconnect_0_cmd_xbar_mux   ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_router                                                   ; --            ; mysystem_mm_interconnect_0_id_router      ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_demultiplexer                                            ; --            ; mysystem_mm_interconnect_0_rsp_xbar_demux ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_multiplexer                                              ; --            ; mysystem_mm_interconnect_0_rsp_xbar_mux   ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_interconnect_wrapper                                     ; --            ; mysystem_mm_interconnect_1                ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_router                                                   ; --            ; mysystem_mm_interconnect_1_addr_router    ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_demultiplexer                                            ; --            ; mysystem_mm_interconnect_1_cmd_xbar_demux ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_multiplexer                                              ; --            ; mysystem_mm_interconnect_1_cmd_xbar_mux   ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_router                                                   ; --            ; mysystem_mm_interconnect_1_id_router      ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_demultiplexer                                            ; --            ; mysystem_mm_interconnect_1_rsp_xbar_demux ; --             ;
+; IP_TOOL_NAME                          ; altera_merlin_multiplexer                                              ; --            ; mysystem_mm_interconnect_1_rsp_xbar_mux   ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_pio                                                      ; --            ; mysystem_pushbuttons                      ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_onchip_memory2                                           ; --            ; mysystem_ram                              ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_pio                                                      ; --            ; mysystem_switches                         ; --             ;
+; IP_TOOL_NAME                          ; altera_avalon_jtag_uart                                                ; --            ; mysystem_system_console                   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_avalon_sc_fifo                     ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_merlin_axi_master_ni               ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_merlin_burst_adapter               ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_merlin_slave_agent                 ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_merlin_slave_translator            ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_merlin_traffic_limiter             ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_merlin_width_adapter               ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; altera_reset_controller                   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem                                  ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_Arm_A9_HPS                       ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_Arm_A9_HPS_hps_io                ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_HEX3_HEX0                        ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_HEX5_HEX4                        ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_irq_mapper                       ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_irq_mapper_001                   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_led                              ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0                ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0_addr_router    ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0_cmd_xbar_demux ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0_cmd_xbar_mux   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0_id_router      ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0_rsp_xbar_demux ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_0_rsp_xbar_mux   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1                ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1_addr_router    ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1_cmd_xbar_demux ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1_cmd_xbar_mux   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1_id_router      ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1_rsp_xbar_demux ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_mm_interconnect_1_rsp_xbar_mux   ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_pushbuttons                      ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_ram                              ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_switches                         ; --             ;
+; IP_TOOL_VERSION                       ; 13.1                                                                   ; --            ; mysystem_system_console                   ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                                                                     ; --            ; --                                        ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                                                                      ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/../../mysystem.cmp                                  ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/mysystem_Arm_A9_HPS_hps.svd                         ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/../../mysystem.qsys                                 ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/alt_types.pre.h                ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sequencer.pre.h                ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/system.pre.h                   ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/emif.pre.xml                   ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sequencer.pre.c                ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --            ; --                                        ; --             ;
+; MISC_FILE                             ; mysystem/synthesis/submodules/hps.pre.xml                              ; --            ; --                                        ; --             ;
+; PARTITION_COLOR                       ; 16764057                                                               ; --            ; --                                        ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL   ; PLACEMENT_AND_ROUTING                                                  ; --            ; --                                        ; Top            ;
+; PARTITION_NETLIST_TYPE                ; SOURCE                                                                 ; --            ; --                                        ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                                                           ; --            ; --                                        ; --             ;
+; SLD_FILE                              ; mysystem/synthesis/mysystem.regmap                                     ; --            ; --                                        ; --             ;
+; SLD_FILE                              ; mysystem/synthesis/mysystem.debuginfo                                  ; --            ; --                                        ; --             ;
+; SLD_INFO                              ; QSYS_NAME mysystem HAS_SOPCINFO 1 GENERATION_ID 1420762379             ; --            ; mysystem                                  ; --             ;
+; SOPCINFO_FILE                         ; mysystem/synthesis/../../mysystem.sopcinfo                             ; --            ; --                                        ; --             ;
+; SYNTHESIS_ONLY_QIP                    ; On                                                                     ; --            ; --                                        ; --             ;
+; USE_DLL_FREQUENCY_FOR_DQS_DELAY_CHAIN ; On                                                                     ; Off           ; --                                        ; --             ;
++---------------------------------------+------------------------------------------------------------------------+---------------+-------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:39     ; 1.0                     ; 1007 MB             ; 00:00:14                           ;
+; Fitter                    ; 00:02:10     ; 1.3                     ; 2607 MB             ; 00:02:02                           ;
+; Assembler                 ; 00:00:35     ; 1.0                     ; 910 MB              ; 00:00:18                           ;
+; TimeQuest Timing Analyzer ; 00:01:12     ; 1.5                     ; 1478 MB             ; 00:00:46                           ;
+; EDA Netlist Writer        ; 00:00:11     ; 1.0                     ; 941 MB              ; 00:00:03                           ;
+; Total                     ; 00:04:47     ; --                      ; --                  ; 00:03:23                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++---------------------------+------------------+---------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
++---------------------------+------------------+---------+------------+----------------+
+; Analysis & Synthesis      ; boom             ; Red Hat ; 6          ; x86_64         ;
+; Fitter                    ; boom             ; Red Hat ; 6          ; x86_64         ;
+; Assembler                 ; boom             ; Red Hat ; 6          ; x86_64         ;
+; TimeQuest Timing Analyzer ; boom             ; Red Hat ; 6          ; x86_64         ;
+; EDA Netlist Writer        ; boom             ; Red Hat ; 6          ; x86_64         ;
++---------------------------+------------------+---------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
+quartus_fit --read_settings_files=off --write_settings_files=off lab1 -c lab1
+quartus_asm --read_settings_files=off --write_settings_files=off lab1 -c lab1
+quartus_sta lab1 -c lab1
+quartus_eda --read_settings_files=off --write_settings_files=off lab1 -c lab1
+
+
+
